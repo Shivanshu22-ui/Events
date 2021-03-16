@@ -13,7 +13,7 @@ $header_top.find('a').on('click', function() {
 
 // fullpage customization
 $('#fullpage').fullpage({
-  sectionsColor: ['#B8AE9C', '#348899', '#F2AE72', '#5C832F', '#B8B89F'],
+  // sectionsColor: ['#B8AE9C', '#348899', '#F2AE72', '#5C832F', '#B8B89F'],  ---->  section colors
   sectionSelector: '.vertical-scrolling',
   slideSelector: '.horizontal-scrolling',
   navigation: true,
@@ -61,4 +61,4 @@ $('#fullpage').fullpage({
       $nav.css('background', 'rgba(0, 47, 77, .25)');
     }
   } 
-}); 
+});

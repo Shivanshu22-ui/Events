@@ -23,7 +23,7 @@
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
-  /* speak: none; */
+  speak: none;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -35,11 +35,9 @@
   content: "a";
   font-size: 2.5em;
   display: block;
-  -webkit-transform: rotateX(180deg);
-          transform: rotateX(180deg);
+  transform: rotateX(180deg);
   color: black;
-  -webkit-transition: color .3s;
-          transition: color .3s;
+  transition: color .3s;
 }
 
 .icon-up-open-big:hover:after {
@@ -51,9 +49,7 @@
  	left: 50%;
   bottom: 30px;
   padding: 0 10px;
-  	-webkit-transform: translateX(-50%);
-  	    -ms-transform: translateX(-50%);
-  	        transform: translateX(-50%);
+  	transform: translateX(-50%);
 }
 
 
@@ -84,13 +80,9 @@
 	font-size: 3em;
 	font-weight: bold;
 	opacity: 0;
-	-webkit-transform: translateY(300px);
-	    -ms-transform: translateY(300px);
-	        transform: translateY(300px);
-	-webkit-transition: opacity, -webkit-transform 1s;
-	        transition: opacity, transform 1s;
-	-webkit-transition-delay: 1s;
-	        transition-delay: 1s;
+	transform: translateY(300px);
+	transition: opacity, transform 1s;
+	transition-delay: 1s;
 }
 
 
@@ -164,8 +156,7 @@ h1 a {
 	background: white;
 	width: 30px;
 	left: 10px;
-	-webkit-transition: all .3s;
-	        transition: all .3s;
+	transition: all .3s;
 }
 
 .toggle-menu i:nth-child(1) {
@@ -182,8 +173,7 @@ h1 a {
 
 .open-menu i:nth-child(1) {
 	top: 25px;
-	-webkit-transform: rotateZ(45deg);
-	        transform: rotateZ(45deg);
+	transform: rotateZ(45deg);
 }
 
 .open-menu i:nth-child(2) {
@@ -192,8 +182,7 @@ h1 a {
 
 .open-menu i:nth-child(3) {
 	top: 25px;
-	-webkit-transform: rotateZ(-45deg);
-	        transform: rotateZ(-45deg);
+	transform: rotateZ(-45deg);
 }
 
 nav {
@@ -204,8 +193,7 @@ nav {
 	position: fixed;
 	top: 70px;
 	width: 100%;
-  -webkit-transition: all 3s;
-          transition: all 3s;
+  transition: all 3s;
 }
 
 .open-menu ~ nav {
@@ -217,17 +205,11 @@ nav {
 
 nav ul {
 	padding: 0 10px;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 }
 
 nav li {
-	-webkit-box-flex: 1;
-	-webkit-flex: 1;
-	    -ms-flex: 1;
-	        flex: 1;
+	flex: 1;
 }
 
 nav li a {
@@ -235,13 +217,12 @@ nav li a {
 	display: block;
 	padding: 30px;
 	text-align: center;
-	-webkit-transition: background .3s;
-	        transition: background .3s;
+	transition: background .3s;
 }
 
 nav li:nth-child(odd) a,
 body.fp-viewing-fifthSection-1 #menu li:nth-child(5) a {
-	background: #962D3E;
+	/* background: #962D3E; */
 }
 
 nav li:nth-child(even) a {
@@ -270,6 +251,9 @@ section {
 	text-align: center;
   /*background: url('https://unsplash.it/1910/1221?image=626') no-repeat center / cover;*/
 }
+.fullpage .vertical-scrolling{
+	
+}
 
 h2 {
 	text-transform: lowercase;
@@ -289,7 +273,7 @@ h3 {
 
 #fp-nav ul li a span, 
 .fp-slidesNav ul li a span {
-	background: white;
+	background: transparent;
 	width: 8px;
 	height: 8px;
 	margin: -4px 0 0 -4px;
@@ -304,7 +288,7 @@ h3 {
 	margin: -8px 0 0 -8px;
 	background: transparent;
 	box-sizing: border-box;
-	border: 1px solid #24221F;
+	/* border: 1px solid #24221F; */
 }
 
 
@@ -314,11 +298,7 @@ h3 {
 
 @media screen and (max-width: 767px) {
 	nav ul {
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-webkit-flex-direction: column;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
+		flex-direction: column;
 	}
 
 	nav li {
