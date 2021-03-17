@@ -248,11 +248,94 @@ body.fp-viewing-fifthSection-1 #menu li:last-child a {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 section { 
-	text-align: center;
+text-align: center;
+	
   /*background: url('https://unsplash.it/1910/1221?image=626') no-repeat center / cover;*/
 }
-.fullpage .vertical-scrolling{
+#fullpage .vertical-scrolling{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* background-color: #161623; */
+	background-image: url(https://images.unsplash.com/photo-1560251085-d9c1dc542960?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#fullpage .vertical-scrolling::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#f00,#f0f);
+	clip-path: circle(25% at right 70%);
+}
+#fullpage .vertical-scrolling::after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#2196f3,#e91e63);
+	clip-path: circle(20% at 10% 10%);
+}
+#fullpage .vertical-scrolling h1{
+font-size: 50px;
+position: absolute;
+color: white;
+left: 40%;
+top: 15%;
+}
+#fullpage .vertical-scrolling .cm1 {
+	height: 60%;
+	position: absolute;
+	width: 20%;
+	z-index: 1;
+	top:30%;
+	left: 10%;
+	background:rgba(255, 255, 255, 0.1);
+	border-radius: 15px;
+	box-shadow:20px 20px 50px rgb(0, 0, 0,0.5) ;
+	border-top: 1px solid rgb(255, 255, 255,0.5);
+	border-left: 1px solid rgb(255, 255, 255,0.5);
+	backdrop-filter: blur(5px);
+}
+#fullpage .vertical-scrolling .c1{
+	height: 50%;
+	position: absolute;
+	width: 100%;
 	
+	/* background-color: yellowgreen; */
+}
+#fullpage .vertical-scrolling .cm2 {
+	height: 60%;
+	position: absolute;
+	width: 20%;
+	top:30%;
+	left:40%;
+	background:rgba(255, 255, 255, 0.1);
+	background:rgba(255, 255, 255, 0.1);
+	border-radius: 15px;
+	box-shadow:20px 20px 50px rgb(0, 0, 0,0.5) ;
+	border-top: 1px solid rgb(255, 255, 255,0.5);
+	border-left: 1px solid rgb(255, 255, 255,0.5);
+	backdrop-filter: blur(5px);
+}
+#fullpage .vertical-scrolling .cm3 {
+	height: 60%;
+	position: absolute;
+	width: 20%;
+	top:30%;
+	left: 70%;
+	background:rgba(255, 255, 255, 0.1);
+	background:rgba(255, 255, 255, 0.1);
+	border-radius: 15px;
+	box-shadow:20px 20px 50px rgb(0, 0, 0,0.5) ;
+	border-top: 1px solid rgb(255, 255, 255,0.5);
+	border-left: 1px solid rgb(255, 255, 255,0.5);
+	backdrop-filter: blur(5px);
 }
 
 h2 {
