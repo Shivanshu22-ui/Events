@@ -261,6 +261,14 @@ text-align: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+#fullpage .vertical-scrolling .blank{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	background-color: #161623;
+}
 #fullpage .vertical-scrolling::before{
 	content: "";
 	position: absolute;
@@ -286,7 +294,7 @@ font-size: 50px;
 position: absolute;
 color: white;
 left: 40%;
-top: 15%;
+top: 10%;
 }
 #fullpage .vertical-scrolling .cm1 {
 	height: 60%;
@@ -337,7 +345,44 @@ top: 15%;
 	border-left: 1px solid rgb(255, 255, 255,0.5);
 	backdrop-filter: blur(5px);
 }
-
+#fullpage .vertical-scrolling .cm13{
+	position: relative;
+	left: -45%;
+	z-index: 1;
+	top: 10%;
+	width: 20%;
+	height: 60%;
+	box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+	            inset -5px -5px 5px rgba(255, 255, 255, 0.1) ;
+}
+#fullpage .vertical-scrolling img{
+	position: relative;
+	left: -25%;
+	top: -20%;
+}
+#fullpage .vertical-scrolling .txt{
+	position: relative;
+	top: -90px;
+	font-size: larger;
+	font-weight: 500;
+	color: white;
+}
+#fullpage .vertical-scrolling .txt h3{
+	line-height: 70px;
+	word-spacing: 12px;
+	color: aliceblue;
+}
+#fullpage .vertical-scrolling .txt .btn{
+	position: relative;
+	padding: 10px 20px;
+	top: 30px;
+	font-size: large;
+	font-weight: 600;
+	border-radius: 10px;
+	text-decoration: none;
+	outline: none;
+	background:linear-gradient(45deg ,blue , skyblue);
+}
 h2 {
 	text-transform: lowercase;
 	font-size: 4em;
