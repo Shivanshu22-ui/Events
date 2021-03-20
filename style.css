@@ -360,7 +360,7 @@ top: 7%;
 	backdrop-filter: blur(5px);
 }
 
-#fullpage .vertical-scrolling .blank2 .card{
+#fullpage .vertical-scrolling .blank2 .cardx{
 	position: relative;
 	z-index: 1;
 	min-width: 320px;
@@ -373,7 +373,7 @@ top: 7%;
 	border-radius: 15px;
 	margin: 35px;
 }
-#fullpage .vertical-scrolling .blank2 .card .box1{
+#fullpage .vertical-scrolling .blank2 .cardx .box1{
 	position: absolute;
 	top: 20px;
 	left: 20px;
@@ -385,7 +385,7 @@ top: 7%;
 	border: 2px solid #1e1f23;
 	transition: 0.5s;
 }
-#fullpage .vertical-scrolling .blank2 .card .box1 .content{
+#fullpage .vertical-scrolling .blank2 .cardx .box1 .content{
 	position: relative;
 	height: 200px;
 	width: 100%;
@@ -393,7 +393,7 @@ top: 7%;
 	background: #2e3841;
 	top: 50%;
 }
-#fullpage .vertical-scrolling .blank2 .card .box1:hover{
+#fullpage .vertical-scrolling .blank2 .cardx .box1:hover{
 	transform: translateY(-50px);
 	box-shadow: 0 40px 70px rgba(0, 0, 0, 0.507);
 }
@@ -451,7 +451,7 @@ h3 {
 	background-repeat: no-repeat;
 	/* opacity:0.85; */
 }
-#fullpage .vertical-scrolling .bg .card{
+#fullpage .vertical-scrolling .bg .cardx{
 	position: relative;
 	z-index: 1;
 	min-width: 320px;
@@ -460,7 +460,7 @@ h3 {
 	border-radius: 15px;
 	margin: 35px;
 }
-#fullpage .vertical-scrolling .bg .card .box1{
+#fullpage .vertical-scrolling .bg .cardx .box1{
 	position: absolute;
 	top: 50px;
 	left: 20px;
@@ -473,7 +473,7 @@ h3 {
 	border: 2px solid #1e1f23;
 	transition: 0.5s;
 }
-#fullpage .vertical-scrolling .bg .card .box1:hover{
+#fullpage .vertical-scrolling .bg .cardx .box1:hover{
 	transform: translateY(-50px);
 	box-shadow: 0 40px 70px rgba(0, 0, 0, 0.507);
 }
@@ -501,7 +501,7 @@ h3 {
 	background: rgb(11, 7, 31);
 	opacity: 0.7;
 }
-#fullpage .vertical-scrolling .bg1 .card{
+#fullpage .vertical-scrolling .bg1 .cardx{
 	position: relative;
 	z-index: 1;
 	min-width: 390px;
@@ -510,7 +510,7 @@ h3 {
 	/* border-radius: 15px; */
 	margin: 35px;
 }
-#fullpage .vertical-scrolling .bg1 .card .box1{
+#fullpage .vertical-scrolling .bg1 .cardx .box1{
 	position: absolute;
 	top: 30px;
 	left: 20px;
@@ -523,19 +523,19 @@ h3 {
 	border: 2px solid #1e1f23;
 	transition: 0.5s;
 }
-#fullpage .vertical-scrolling .bg1 .card .box1 .img{
+#fullpage .vertical-scrolling .bg1 .cardx .box1 .img{
 	position: relative;
 	height: 50%;
 	width: 100%;
 	background:url(https://image.freepik.com/free-photo/digital-crime-by-anonymous-hacker_53876-41594.jpg);
 }
-#fullpage .vertical-scrolling .bg1 .card .box1 .contnt{
+#fullpage .vertical-scrolling .bg1 .cardx .box1 .contnt{
 	text-align: center;
 	color: #6c6f72;
 	padding-top: 15px;
 	font-size: 1.5em;
 }
-#fullpage .vertical-scrolling .bg1 .card .box1:hover{
+#fullpage .vertical-scrolling .bg1 .cardx .box1:hover{
 	transform: translateY(-20px);
 	box-shadow: 0 40px 70px rgba(0, 0, 0, 0.507);
 }
