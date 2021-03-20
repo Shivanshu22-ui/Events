@@ -309,7 +309,8 @@ font-size: 50px;
 position: absolute;
 color: white;
 left: 40%;
-top: 10%;
+z-index: 10;
+top: 7%;
 }
 #fullpage .vertical-scrolling .cm1 {
 	height: 60%;
@@ -329,8 +330,6 @@ top: 10%;
 	height: 50%;
 	position: absolute;
 	width: 100%;
-	
-	/* background-color: yellowgreen; */
 }
 #fullpage .vertical-scrolling .cm2 {
 	height: 60%;
@@ -386,6 +385,14 @@ top: 10%;
 	border: 2px solid #1e1f23;
 	transition: 0.5s;
 }
+#fullpage .vertical-scrolling .blank2 .card .box1 .content{
+	position: relative;
+	height: 200px;
+	width: 100%;
+	border-radius: 10px;
+	background: #2e3841;
+	top: 50%;
+}
 #fullpage .vertical-scrolling .blank2 .card .box1:hover{
 	transform: translateY(-50px);
 	box-shadow: 0 40px 70px rgba(0, 0, 0, 0.507);
@@ -407,10 +414,10 @@ top: 10%;
 	word-spacing: 12px;
 	color: aliceblue;
 }
-#fullpage .vertical-scrolling .txt .btn{
+#fullpage .vertical-scrolling  .btn{
 	position: relative;
 	padding: 10px 20px;
-	top: 30px;
+	top: 25px;
 	font-size: large;
 	font-weight: 600;
 	border-radius: 10px;
@@ -438,12 +445,11 @@ h3 {
 	height: 100vh;
 	max-width: 100%;
 	box-sizing: border-box;
-	margin-top: 90px ;
-	background: url(https://image.freepik.com/free-photo/robot-hand-making-contact-with-human-hand-dark-background_117023-861.jpg);
+	background: url(https://image.freepik.com/free-photo/white-cyborg-finger-about-touch-human-finger-3d-rendering_117023-5.jpg);
 	background-size: cover;
 	height: 100vh;
 	background-repeat: no-repeat;
-	opacity:0.85
+	/* opacity:0.85; */
 }
 #fullpage .vertical-scrolling .bg .card{
 	position: relative;
@@ -456,7 +462,7 @@ h3 {
 }
 #fullpage .vertical-scrolling .bg .card .box1{
 	position: absolute;
-	top: 20px;
+	top: 50px;
 	left: 20px;
 	right: 20px;
 	bottom: 20px;
@@ -469,6 +475,68 @@ h3 {
 }
 #fullpage .vertical-scrolling .bg .card .box1:hover{
 	transform: translateY(-50px);
+	box-shadow: 0 40px 70px rgba(0, 0, 0, 0.507);
+}
+#fullpage .vertical-scrolling .bg1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	/* margin: 0; */
+	padding: 0;
+	height: 100vh;
+	max-width: 100%;
+	box-sizing: border-box;
+	background: url(https://img.freepik.com/free-vector/colored-hacker-code-realistic-composition-with-person-creates-codes-hacking-stealing-information-vector-illustration_1284-18005.jpg?size=626&ext=jpg&ga=GA1.2.233876206.1613963062);
+	background-size: cover;
+	height: 100vh;
+	background-repeat: no-repeat;
+	/* opacity:0.85 */
+}
+#fullpage .vertical-scrolling .bg1::before{
+	content: "";
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	background: rgb(11, 7, 31);
+	opacity: 0.7;
+}
+#fullpage .vertical-scrolling .bg1 .card{
+	position: relative;
+	z-index: 1;
+	min-width: 390px;
+	box-sizing: border-box;
+	height: 530px;
+	/* border-radius: 15px; */
+	margin: 35px;
+}
+#fullpage .vertical-scrolling .bg1 .card .box1{
+	position: absolute;
+	top: 30px;
+	left: 20px;
+	right: 20px;
+	bottom: 20px;
+	background: #000000;
+	opacity: 0.9;
+	/* border-radius: 15px; */
+	box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+	border: 2px solid #1e1f23;
+	transition: 0.5s;
+}
+#fullpage .vertical-scrolling .bg1 .card .box1 .img{
+	position: relative;
+	height: 50%;
+	width: 100%;
+	background:url(https://image.freepik.com/free-photo/digital-crime-by-anonymous-hacker_53876-41594.jpg);
+}
+#fullpage .vertical-scrolling .bg1 .card .box1 .contnt{
+	text-align: center;
+	color: #6c6f72;
+	padding-top: 15px;
+	font-size: 1.5em;
+}
+#fullpage .vertical-scrolling .bg1 .card .box1:hover{
+	transform: translateY(-20px);
 	box-shadow: 0 40px 70px rgba(0, 0, 0, 0.507);
 }
 
