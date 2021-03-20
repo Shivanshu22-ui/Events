@@ -602,3 +602,114 @@ h3 {
 }
 
 /* This is a message */
+
+/* event coding page css */
+.code-container{
+  position: relative;
+  z-index: 1;display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px 0;
+	background: url(./Images/coding-background.jpg);
+	height: 100%;
+}
+.code-container .code-card{
+  position: relative;
+  width: 300px;
+  height: 450px;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+.code-container .code-card .code-content{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 01;
+  transition: 0.5s;
+}
+.code-container .code-card:hover .code-content{
+  transform: translateY(-40px);
+}
+.code-container .code-card .code-content .code-imgbx{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 10px solid rgba(0,0,0,0.25);
+}
+.code-container .code-card .code-content .code-imgbx img{
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+.code-container .code-card .code-content .code-contentBx h3{
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0 10px;
+  line-height: 1.1em;
+}
+.code-container .code-card .code-content .code-contentBx h3 span{
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: initial;
+}
+
+.code-container .code-card .code-content .code-contentBx p{
+  color: rgb(187, 255, 0);
+  letter-spacing: 1px;
+  font-size: 14px;
+	font-weight: 300;
+  text-align: center;
+}
+.code-container .code-card .code-content .code-detail{
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  bottom: -45px;
+}
+.code-container .code-card .code-content .code-detail p{
+  transform: translateY(0px);
+  transition: 0.5s;
+}
+.code-container .code-card .code-content .code-detail p{
+  transform: translateY(0px);
+	text-transform: lowercase;
+}
+.code-container .code-card .code-content .code-detail button{
+  transform: translateY(40px);
+  transition: 0.5s;
+}
+.code-container .code-card .code-content .code-detail button{
+  transform: translateY(0px);
+}
+.code-container .code-card:hover .code-content .code-detail{
+  color: rgb(245, 245, 245);
+  opacity: 1;
+  margin-top: 8px;
+  letter-spacing: 1px;
+  font-size: 14px;
+  text-align: center;
+}
+.code-container .code-card:hover .code-content .code-btn{
+  opacity: 1;
+  padding: 3px;
+  background: linear-gradient(45deg, rgb(231, 18, 196), rgb(84, 2, 92));
+  font-size: 18px;
+  border-radius: 6px;
+  border-color: rgb(183, 0, 255);
+}
