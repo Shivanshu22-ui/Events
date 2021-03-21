@@ -539,6 +539,72 @@ h3 {
 	transform: translateY(-20px);
 	box-shadow: 0 40px 70px rgba(0, 0, 0, 0.507);
 }
+#fullpage .vertical-scrolling .bg2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 0;
+	height: 100vh;
+	max-width: 100%;
+	box-sizing: border-box;
+	background: url(https://image.freepik.com/free-photo/businessman-pointing-graphs-symbols_1232-917.jpg);
+	background-size: cover;
+	height: 100vh;
+	background-repeat: no-repeat;
+}
+#fullpage .vertical-scrolling .bg2::before{
+	content: "";
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	background: rgb(11, 7, 31);
+	opacity: 0.7;
+}
+#fullpage .vertical-scrolling .bg2 .cardx{
+	position: relative;
+	z-index: 1;
+	min-width: 390px;
+	box-sizing: border-box;
+	height: 570px;
+	margin: 35px;
+	border-radius:15px ;
+}
+#fullpage .vertical-scrolling .bg2 .cardx .box1{
+	position: absolute;
+	top: 30px;
+	left: 20px;
+	right: 20px;
+	bottom: 20px;
+	background: #2b2828;
+	opacity: 0.9;
+	border-radius: 15px;
+	box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+	border: 2px solid #1e1f23;
+	transition: 0.5s;
+}
+#fullpage .vertical-scrolling .bg2 .cardx .box1 .img1{
+	position: relative;
+	height: 50%;
+	width: 100%;
+	background:url(https://image.freepik.com/free-photo/man-with-chart-his-hand_1134-330.jpg);
+}
+#fullpage .vertical-scrolling .bg2 .cardx .box1 .img2{
+	position: relative;
+	height: 50%;
+	width: 100%;
+	background:url(https://image.freepik.com/free-photo/businessman-touching-virtual-screen_1232-737.jpg);
+}
+#fullpage .vertical-scrolling .bg2 .cardx .box1 .contnt{
+	text-align: center;
+	color: #6c6f72;
+	padding-top: 15px;
+	font-size: 1.5em;
+}
+#fullpage .vertical-scrolling .bg2 .cardx .box1:hover{
+	transform: translateY(-20px);
+	box-shadow: 0 40px 70px rgba(0, 0, 0, 0.507);
+}
 
 
 /* SLIDENAV STYLES - fullPage.js 
