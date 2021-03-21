@@ -713,3 +713,57 @@ h3 {
   border-radius: 6px;
   border-color: rgb(183, 0, 255);
 }
+
+/* Mechanics Event CSS */
+.mech-container{
+  width: 100%;
+  height: 100vh;
+  background: #2d3436;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mech-card{
+  flex-basis: 40%;
+  background-color: black;
+  margin-left: 50px;
+}
+.mech-card-title1{
+  background: linear-gradient(rgba(255,255,255,0.4),rgba(241,196,15,0.7)), url(./Images/logo-catai.jpg);
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  clip-path: polygon(0% 0% , 100% 0% , 100% 80%, 0% 100%);
+}
+.mech-card-title2{
+  background: linear-gradient(rgba(230,136,34,0.7),rgba(26,188,156,0.7)), url(./Images/logo-catai.jpg);
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  clip-path: polygon(0% 0% , 100% 0% , 100% 80%, 0% 100%);
+}
+.mech-card-body{
+  padding: 15px;
+}
+.mech-container .mech-card h2{
+  margin: 10px;
+}
+#mech-btn1{
+  padding: 5px;
+  background-color: rgba(241,196,15,1);
+  border: none;
+  margin: 20px 0px;
+	font-size: 2em;
+}
+#mech-btn2{
+  padding: 5px;
+  background-color: rgba(26,188,156,1);
+  border: none;
+  margin: 20px 0px;
+	font-size: 2em;
+}
+.mech-card:hover{
+  transform: translateY(-10px);
+  transition: 0.3s linear;
+}
